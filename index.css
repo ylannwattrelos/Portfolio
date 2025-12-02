@@ -468,7 +468,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .projet__list {
-    /* list-style-type: square; */
+    list-style-type: square; 
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
 }
@@ -534,9 +534,15 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+.apropos__text p {
+    text-align: justify;
+    text-indent: 2.5em;
+    line-height: 1.6;
+}
+
 .apropos__photo {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 /* --------------------------------------- */

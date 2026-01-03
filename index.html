@@ -17,9 +17,11 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#projet" class="nav__lien">Mes projets</a></li>
           <li class="nav__item">
             <a href="#apropos" class="nav__lien">A propos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projet" class="nav__lien">Mes projets</a>
           </li>
           <li class="nav__item">
             <a href="#contact" class="nav__lien">Me contacter</a>
@@ -39,44 +41,6 @@
   </header>
 
   <main role="main">
-
-    <!-- ***** Projet ***** -->
-
-    <section class="projet" id="projet">
-      <div class="row">
-        <h2>Mes Projets</h2>
-        <div class="projet__boxes">
-
-          <!-- ***** PortFolio ***** -->
-
-          <div class="projet__box">
-            <div class="projet__text">
-              <h3>Portfolio</h3>
-              <p>
-                Mon portfolio, le site sur lequel vous êtes actuellement.
-              </p>
-              <ul class="projet__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-              </ul>
-
-              <div class="projet__liens">
-                <a href="#top" class="lien__text">
-                  Voir le site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/ylannwattrelos/PortFolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="projet__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="projet__image-box">
-              <img src="./images/PortFolio.png" class="projet__image" alt="portfolio" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ***** Apropos ***** -->
 
@@ -115,6 +79,252 @@
         </div>
       </div>
     </section>
+
+    <!-- ***** Projet ***** -->
+
+    <section class="projet" id="projet">
+      <div class="row">
+        <h2>Mes Projets</h2>
+        <div class="projet__boxes">
+
+          <div class="carousel-viewport">
+            <div class="projet__boxes auto-scroll">
+
+              <!-- ***** PortFolio ***** -->
+
+              <div class="projet__box">
+                <div class="projet__text">
+                  <h3>Portfolio</h3>
+                  <ul class="projet__list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+
+                  <div class="projet__liens">
+                    <a class="lien__text" data-modal-trigger="modal-portfolio">
+                      Voir le projet <span>&rarr;</span>
+                    </a>
+                    <a href="https://github.com/ylannwattrelos/PortFolio" title="View Source Code" target="_blank">
+                      <img src="./images/github.svg" class="projet__code" alt="GitHub">
+                    </a>
+                  </div>
+                </div>
+                <div class="projet__image-box">
+                  <img src="./images/PortFolio.png" class="projet__image" alt="portfolio" />
+                </div>
+              </div>
+
+              <!-- ***** IUTerrain *****-->
+
+              <div class="projet__box">
+                <div class="projet__text">
+                  <h3>IUT'errain</h3>
+                  <ul class="projet__list">
+                    <li>Java</li>
+                    <li>JavaFX</li>
+                    <li>FXML</li>
+                  </ul>
+
+                  <div class="projet__liens">
+                    <a class="lien__text" data-modal-trigger="modal-iuterrain">
+                      Voir le projet <span>&rarr;</span>
+                    </a>
+                    <a href="https://github.com/ylannwattrelos/IUTerrain" title="View Source Code" target="_blank">
+                      <img src="./images/github.svg" class="projet__code" alt="GitHub">
+                    </a>
+                  </div>
+                </div>
+                <div class="projet__image-box">
+                  <img src="./images/IUTerrain.png" class="projet__image" alt="page d'acceuil du jeu" />
+                </div>
+              </div>
+
+              <!-- ***** Check.exe *****-->
+
+              <div class="projet__box">
+                <div class="projet__text">
+                  <h3>Check.exe</h3>
+                  <ul class="projet__list">
+                    <li>Java</li>
+                  </ul>
+
+                  <div class="projet__liens">
+                    <a class="lien__text" data-modal-trigger="modal-check.exe">
+                      Voir le projet <span>&rarr;</span>
+                    </a>
+                    <a href="https://github.com/ylannwattrelos/Check.exe" title="View Source Code" target="_blank">
+                      <img src="./images/github.svg" class="projet__code" alt="GitHub">
+                    </a>
+                  </div>
+                </div>
+                <div class="projet__image-box">
+                  <img src="./images/checkexe.png" class="projet__image" alt="page d'acceuil du jeu" />
+                </div>
+              </div>
+
+            </div>
+
+            
+            <div aria-hidden="true" class="projet__boxes auto-scroll">
+              <!-- ***** PortFolio ***** -->
+
+              <div class="projet__box">
+                <div class="projet__text">
+                  <h3>Portfolio</h3>
+                  <ul class="projet__list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+
+                  <div class="projet__liens">
+                    <a class="lien__text" data-modal-trigger="modal-portfolio">
+                      Voir le projet <span>&rarr;</span>
+                    </a>
+                    <a href="https://github.com/ylannwattrelos/PortFolio" title="View Source Code" target="_blank">
+                      <img src="./images/github.svg" class="projet__code" alt="GitHub">
+                    </a>
+                  </div>
+                </div>
+                <div class="projet__image-box">
+                  <img src="./images/PortFolio.png" class="projet__image" alt="portfolio" />
+                </div>
+              </div>
+
+              <!-- ***** IUTerrain *****-->
+
+              <div class="projet__box">
+                <div class="projet__text">
+                  <h3>IUT'errain</h3>
+                  <ul class="projet__list">
+                    <li>Java</li>
+                    <li>JavaFX</li>
+                    <li>FXML</li>
+                  </ul>
+
+                  <div class="projet__liens">
+                    <a class="lien__text" data-modal-trigger="modal-iuterrain">
+                      Voir le projet <span>&rarr;</span>
+                    </a>
+                    <a href="https://github.com/ylannwattrelos/IUTerrain" title="View Source Code" target="_blank">
+                      <img src="./images/github.svg" class="projet__code" alt="GitHub">
+                    </a>
+                  </div>
+                </div>
+                <div class="projet__image-box">
+                  <img src="./images/IUTerrain.png" class="projet__image" alt="page d'acceuil du jeu" />
+                </div>
+              </div>
+
+              <!-- ***** Check.exe *****-->
+
+              <div class="projet__box">
+                <div class="projet__text">
+                  <h3>Check.exe</h3>
+                  <ul class="projet__list">
+                    <li>Java</li>
+                  </ul>
+
+                  <div class="projet__liens">
+                    <a class="lien__text" data-modal-trigger="modal-check.exe">
+                      Voir le projet <span>&rarr;</span>
+                    </a>
+                    <a href="https://github.com/ylannwattrelos/Check.exe" title="View Source Code" target="_blank">
+                      <img src="./images/github.svg" class="projet__code" alt="GitHub">
+                    </a>
+                  </div>
+                </div>
+                <div class="projet__image-box">
+                  <img src="./images/checkexe.png" class="projet__image" alt="page d'acceuil du jeu" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ***** info portfolio ***** -->
+
+          <div id="modal-portfolio" class="modal">
+            <div class="modal-content">
+              <span class="close-button">&times;</span>
+              <h3>Mon Portfolio</h3>
+              <p>
+                Ce site web a été développé pour présenter mes projets, mes compétences et mon parcours. C'est un projet personnel visant à démontrer ma maîtrise des technologies front-end fondamentales.
+              </p>
+              <p>
+                <b>Objectifs principaux :</b>
+                <ul>
+                  <li>Conception responsive (adaptable sur mobile, tablette et desktop).</li>
+                  <li>Implémentation d'une navigation claire et intuitive.</li>
+                  <li>Utilisation de JavaScript pour améliorer l'interactivité (comme ces modales !).</li>
+                </ul>
+              </p>
+              <p>
+                <b>Technologies :</b> HTML, CSS, et JavaScript.
+              </p>
+              <a href="https://github.com/ylannwattrelos/PortFolio" target="_blank" class="modal-link">
+                Voir le code source complet sur GitHub &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- ***** info IUTerrain *****-->
+
+          <div id="modal-iuterrain" class="modal">
+            <div class="modal-content">
+              <span class="close-button">&times;</span>
+              <h3>IUT'errain : Le Labyrinthe en Java</h3>
+              <p>
+                IUT'errain est un jeu de labyrinthe développé dans le cadre d'un projet universitaire. L'objectif était de mettre en pratique les connaissances acquises en programmation orientée objet (POO) et en développement d'interfaces graphiques, en utilisant le principe du MVC (Modèle, vue, controleur)
+              </p>
+              <p>
+                <b>Technologies utilisées :</b>
+                <ul>
+                  <li><b>Java :</b> Langage de programmation principal.</li>
+                  <li><b>JavaFX :</b> Framework pour la création de l'interface graphique.</li>
+                  <li><b>FXML :</b> Langage de balisage pour définir la structure de l'interface utilisateur, séparant la vue du contrôleur.</li>
+                </ul>
+              </p>
+              <p>
+                Le jeu propose différente génération de labyrinthe et une navigation utilisateur.
+              </p>
+              <a href="https://github.com/ylannwattrelos/IUTerrain" target="_blank" class="modal-link">
+                Voir le code source complet sur GitHub &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- ***** info Check.exe *****-->
+
+          <div id="modal-check.exe" class="modal">
+            <div class="modal-content">
+              <span class="close-button">&times;</span>
+              <h3>Check.exe : Échecs en Terminal</h3>
+              <p>
+                <b>Check.exe</b> est un jeu d'échecs entièrement développé en Java, conçu pour s'exécuter dans un terminal. Ce projet met l'accent sur la logique algorithmique pure et la gestion des règles complexes du jeu d'échecs sans interface graphique lourde.
+              </p>
+              <p>
+                <b>Technologies utilisées :</b>
+                <ul>
+                  <li><b>Java :</b> Utilisation intensive de la POO pour modéliser les pièces et leurs déplacements.</li>
+                  <li><b>Bash/Scripts :</b> Automatisation de la compilation et de l'exécution via des scripts shell.</li>
+                  <li><b>Logique de jeu :</b> Implémentation des règles spéciales (Roque, Prise en passant, Promotion).</li>
+                </ul>
+              </p>
+              <p>
+                Le jeu propose une interface en caractères ASCII pour une expérience rétro et légère.
+              </p>
+              <a href="https://github.com/ylannwattrelos/Check.exe" target="_blank" class="modal-link">
+                Voir le code source complet sur GitHub &rarr;
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
   </main>
 
   <!-- ***** Contact ***** -->

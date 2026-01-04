@@ -7,24 +7,24 @@
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
   <title>
-    Ylann Wattrelos | Etudiant en BUT Informatique.
+    Ylann Wattrelos | Étudiant en BUT Informatique.
   </title>
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-  <header class="header" role="banniere" id="top">
+  <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item">
-            <a href="#top" class="nav__lien">Accueil</a>
-          </li>
-          <li class="nav__item">
-            <a href="#apropos" class="nav__lien">A propos</a>
+            <a href="#apropos" class="nav__lien">À propos</a>
           </li>
           <li class="nav__item">
             <a href="#projet" class="nav__lien">Mes projets</a>
+          </li>
+          <li class="nav__item">
+            <a href="#competences" class="nav__lien">Mes compétences</a>
           </li>
           <li class="nav__item">
             <a href="#parcours" class="nav__lien">Formation</a>
@@ -48,11 +48,9 @@
 
   <main role="main">
 
-    <!-- ***** Apropos ***** -->
-
     <section class="apropos" id="apropos">
       <div class="row">
-        <h2>A propos de moi</h2>
+        <h2>À propos de moi</h2>
         <div class="apropos__content">
           <div class="apropos__text">
               <p class="paragraphe-intro">
@@ -70,7 +68,7 @@
               <p class="paragraphe-defis">
                   Je suis constamment à la recherche de nouveaux défis et de projets qui me poussent hors de ma zone de confort. 
                   J'aime le travail d'équipe et ce que je peux apprendre des autres. Pour moi, l'apprentissage est un processus continu, 
-                  essentiel dans le domaine de l'informatique qui est en constant évolution. Naturellement, je m'efforce de produire du 
+                  essentiel dans le domaine de l'informatique qui est en constante évolution. Naturellement, je m'efforce de produire du 
                   code propre, documenté et maintenable.
               </p>
 
@@ -86,8 +84,6 @@
       </div>
     </section>
 
-    <!-- ***** Projet ***** -->
-
     <section class="projet" id="projet">
       <div class="row">
         <h2>Mes Projets</h2>
@@ -96,8 +92,6 @@
           <div class="carousel-projet">
             <div class="projet__boxes auto-scroll">
 
-              <!-- ***** PortFolio ***** -->
-
               <div class="projet__box">
                 <div class="projet__text">
                   <h3>Portfolio</h3>
@@ -121,8 +115,6 @@
                 </div>
               </div>
 
-              <!-- ***** IUTerrain *****-->
-
               <div class="projet__box">
                 <div class="projet__text">
                   <h3>IUT'errain</h3>
@@ -142,11 +134,9 @@
                   </div>
                 </div>
                 <div class="projet__image-box">
-                  <img src="./images/IUTerrain.png" class="projet__image" alt="page d'acceuil du jeu" />
+                  <img src="./images/IUTerrain.png" class="projet__image" alt="page d'accueil du jeu" />
                 </div>
               </div>
-
-              <!-- ***** Check.exe *****-->
 
               <div class="projet__box">
                 <div class="projet__text">
@@ -165,7 +155,7 @@
                   </div>
                 </div>
                 <div class="projet__image-box">
-                  <img src="./images/checkexe.png" class="projet__image" alt="page d'acceuil du jeu" />
+                  <img src="./images/checkexe.png" class="projet__image" alt="page d'accueil du jeu" />
                 </div>
               </div>
 
@@ -173,8 +163,6 @@
 
 
             <div aria-hidden="true" class="projet__boxes auto-scroll">
-              <!-- ***** PortFolio ***** -->
-
               <div class="projet__box">
                 <div class="projet__text">
                   <h3>Portfolio</h3>
@@ -198,8 +186,6 @@
                 </div>
               </div>
 
-              <!-- ***** IUTerrain *****-->
-
               <div class="projet__box">
                 <div class="projet__text">
                   <h3>IUT'errain</h3>
@@ -219,11 +205,9 @@
                   </div>
                 </div>
                 <div class="projet__image-box">
-                  <img src="./images/IUTerrain.png" class="projet__image" alt="page d'acceuil du jeu" />
+                  <img src="./images/IUTerrain.png" class="projet__image" alt="page d'accueil du jeu" />
                 </div>
               </div>
-
-              <!-- ***** Check.exe *****-->
 
               <div class="projet__box">
                 <div class="projet__text">
@@ -242,14 +226,12 @@
                   </div>
                 </div>
                 <div class="projet__image-box">
-                  <img src="./images/checkexe.png" class="projet__image" alt="page d'acceuil du jeu" />
+                  <img src="./images/checkexe.png" class="projet__image" alt="page d'accueil du jeu" />
                 </div>
               </div>
 
             </div>
           </div>
-
-          <!-- ***** info portfolio ***** -->
 
           <div id="modal-portfolio" class="modal">
             <div class="modal-content">
@@ -275,14 +257,12 @@
             </div>
           </div>
 
-          <!-- ***** info IUTerrain *****-->
-
           <div id="modal-iuterrain" class="modal">
             <div class="modal-content">
               <span class="close-button">&times;</span>
               <h3>IUT'errain : Le Labyrinthe en Java</h3>
               <p>
-                IUT'errain est un jeu de labyrinthe développé dans le cadre d'un projet universitaire. L'objectif était de mettre en pratique les connaissances acquises en programmation orientée objet (POO) et en développement d'interfaces graphiques, en utilisant le principe du MVC (Modèle, vue, controleur)
+                IUT'errain est un jeu de labyrinthe développé dans le cadre d'un projet universitaire. L'objectif était de mettre en pratique les connaissances acquises en programmation orientée objet (POO) et en développement d'interfaces graphiques, en utilisant le principe du MVC (Modèle, Vue, Contrôleur).
               </p>
               <p>
                 <b>Technologies utilisées :</b>
@@ -293,7 +273,7 @@
                 </ul>
               </p>
               <p>
-                Le jeu propose différente génération de labyrinthe et une navigation utilisateur.
+                Le jeu propose différentes générations de labyrinthes et une navigation utilisateur fluide.
               </p>
               <a href="https://github.com/ylannwattrelos/IUTerrain" target="_blank" class="modal-link">
                 Voir le code source complet sur GitHub &rarr;
@@ -301,14 +281,13 @@
             </div>
           </div>
 
-          <!-- ***** info Check.exe *****-->
-
           <div id="modal-check.exe" class="modal">
             <div class="modal-content">
               <span class="close-button">&times;</span>
               <h3>Check.exe : Échecs en Terminal</h3>
               <p>
                 <b>Check.exe</b> est un jeu d'échecs entièrement développé en Java, conçu pour s'exécuter dans un terminal. Ce projet nous a surtout permis de découvrir et d'appliquer la méthodologie Agile.
+              </p>
               <p>
                 <b>Technologies utilisées :</b>
                 <ul>
@@ -329,8 +308,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ***** Competences ***** -->
 
     <section class="competences" id="competences">
       <div class="row">
@@ -365,8 +342,6 @@
       </div>
     </section>
 
-    <!-- ***** Formation ***** -->
-
     <section class="parcours" id="parcours">
       <div class="row">
         <h2>Formation</h2>
@@ -396,36 +371,31 @@
     
   </main>
 
-  <!-- ***** Contact ***** -->
-
   <section class="contact" id="contact">
     <div class="row">
       <h2>Me contacter</h2>
       <div class="contact__info">
         <p>
-          Actuellement <b>étudiant en informatique</b> et passionné par le développement web et le develeppement java, je suis constamment à la recherche de nouveaux défis techniques.
+          Actuellement <b>étudiant en informatique</b> et passionné par le développement web et le développement Java, je suis constamment à la recherche de nouveaux défis techniques.
           <br><br>
           Je suis disponible pour discuter d'opportunités de <b>stage</b>, de <b>projets collaboratifs</b>, ou pour échanger sur mes réalisations. Que vous ayez un conseil à me donner ou une proposition concrète, n'hésitez pas à m'envoyer un e-mail. Je réponds rapidement !
         </p>
-        <!-- Replace the email with yours -->
         <a href="mailto:ylannwattrelos060@gmail.com" class="btn">ylannwattrelos060@gmail.com</a>
       </div>
     </div>
   </section>
 
-  <!-- ***** Footer ***** -->
-
   <footer role="contentinfo" class="footer">
     <div class="row">
       <ul class="footer__reseau-liens">
         <li class="footer__reseau-lien-item">
-          <a href="https://github.com/ylannwattrelos/" title="Lien vers Profile Github">
+          <a href="https://github.com/ylannwattrelos/" title="Lien vers profil Github">
             <img src="./images/github.svg" class="footer__reseau-image" alt="Github">
           </a>
         </li>
         <li class="footer__reseau-lien-item">
           <a href="https://www.linkedin.com/in/ylann-wattrelos-19434a398/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__reseau-image" alt="Linkedin">
+            <img src="./images/linkedin.svg" title="Lien vers profil Linkedin" class="footer__reseau-image" alt="Linkedin">
           </a>
         </li>
       </ul>

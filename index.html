@@ -46,7 +46,7 @@
     </div>
   </header>
 
-  <main role="main">
+  <- role="main">
 
     <section class="apropos" id="apropos">
       <div class="row">
@@ -84,37 +84,39 @@
       </div>
     </section>
 
+
+    <!-- *** Projet *** -->
     <section class="projet" id="projet">
       <div class="row">
         <h2>Mes Projets</h2>
         <div class="projet__boxes">
 
           <div class="carousel-projet">
-            <div class="projet__boxes auto-scroll">
-
+            <div class="projet__boxes auto-scroll"> 
+              
+              <!-- *** Mille borne *** -->
               <div class="projet__box">
                 <div class="projet__text">
-                  <h3>Portfolio</h3>
+                  <h3>Mille Borne</h3>
                   <ul class="projet__list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>IJava</li>
                   </ul>
 
                   <div class="projet__liens">
-                    <a class="lien__text" data-modal-trigger="modal-portfolio">
+                    <a class="lien__text" data-modal-trigger="modal-milleborne">
                       Voir le projet <span>&rarr;</span>
                     </a>
-                    <a href="https://github.com/ylannwattrelos/PortFolio" title="View Source Code" target="_blank">
+                    <a href="https://github.com/ylannwattrelos/MilleBornePourUnChampion" title="View Source Code" target="_blank">
                       <img src="./images/github.svg" class="projet__code" alt="GitHub">
                     </a>
                   </div>
                 </div>
                 <div class="projet__image-box">
-                  <img src="./images/PortFolio.png" class="projet__image" alt="portfolio" />
+                  <img src="./images/MilleBorne.png" class="projet__image" alt="portfolio" />
                 </div>
               </div>
 
+              <!--- *** IUT'errain *** -->
               <div class="projet__box">
                 <div class="projet__text">
                   <h3>IUT'errain</h3>
@@ -138,6 +140,7 @@
                 </div>
               </div>
 
+              <!-- *** Check.exe *** -->
               <div class="projet__box">
                 <div class="projet__text">
                   <h3>Check.exe</h3>
@@ -162,30 +165,32 @@
             </div>
 
 
+            <!-- *** Boxe pour le carrousel *** -->
             <div aria-hidden="true" class="projet__boxes auto-scroll">
+
+              <!-- *** Mille borne *** -->
               <div class="projet__box">
                 <div class="projet__text">
-                  <h3>Portfolio</h3>
+                  <h3>Mille Borne</h3>
                   <ul class="projet__list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>IJava</li>
                   </ul>
 
                   <div class="projet__liens">
-                    <a class="lien__text" data-modal-trigger="modal-portfolio">
+                    <a class="lien__text" data-modal-trigger="modal-milleborne">
                       Voir le projet <span>&rarr;</span>
                     </a>
-                    <a href="https://github.com/ylannwattrelos/PortFolio" title="View Source Code" target="_blank">
+                    <a href="https://github.com/ylannwattrelos/MilleBornePourUnChampion" title="View Source Code" target="_blank">
                       <img src="./images/github.svg" class="projet__code" alt="GitHub">
                     </a>
                   </div>
                 </div>
                 <div class="projet__image-box">
-                  <img src="./images/PortFolio.png" class="projet__image" alt="portfolio" />
+                  <img src="./images/MilleBorne.png" class="projet__image" alt="portfolio" />
                 </div>
               </div>
 
+              <!--- *** IUT'errain *** -->
               <div class="projet__box">
                 <div class="projet__text">
                   <h3>IUT'errain</h3>
@@ -209,6 +214,7 @@
                 </div>
               </div>
 
+              <!-- *** Check.exe *** -->
               <div class="projet__box">
                 <div class="projet__text">
                   <h3>Check.exe</h3>
@@ -229,29 +235,34 @@
                   <img src="./images/checkexe.png" class="projet__image" alt="page d'accueil du jeu" />
                 </div>
               </div>
+
+            </div>
 
             </div>
           </div>
 
-          <div id="modal-portfolio" class="modal">
+          <!-- *** box info sup projet-->
+          <div id="modal-milleborne" class="modal">
             <div class="modal-content">
               <span class="close-button">&times;</span>
-              <h3>Mon Portfolio</h3>
+              <h3>Mille Borne pour un Champion</h3>
               <p>
-                Ce site web a été développé pour présenter mes projets, mes compétences et mon parcours. C'est un projet personnel visant à démontrer ma maîtrise des technologies front-end fondamentales.
+                Ce projet a été <strong>réalisé en binôme</strong> dans le cadre de ma formation. L'objectif était de recréer le célèbre jeu de cartes, en y ajoutant une petite touche éducative, en appliquant des concepts de programmation structurée.
               </p>
-              <p>
-                <b>Objectifs principaux :</b>
+
+              <div>
+                <b>Points clés du projet :</b>
                 <ul>
-                  <li>Conception responsive (adaptable sur mobile, tablette et desktop).</li>
-                  <li>Implémentation d'une navigation claire et intuitive.</li>
-                  <li>Utilisation de JavaScript pour améliorer l'interactivité (comme ces modales !).</li>
+                  <li>Conception responsive pour une utilisation sur tous supports.</li>
+                  <li>Interface utilisateur fluide et intuitive.</li>
+                  <li>Gestion de la logique de jeu (attaques, bottes, limitations de vitesse).</li>
                 </ul>
-              </p>
+              </div>
+
               <p>
-                <b>Technologies :</b> HTML, CSS, et JavaScript.
+                <b>Technologies :</b> <strong>iJava</strong> (une version simplifiée du Java orientée apprentissage).
               </p>
-              <a href="https://github.com/ylannwattrelos/PortFolio" target="_blank" class="modal-link">
+              <a href="https://github.com/ylannwattrelos/MilleBornePourUnChampion" target="_blank" class="modal-link">
                 Voir le code source complet sur GitHub &rarr;
               </a>
             </div>

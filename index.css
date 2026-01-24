@@ -218,6 +218,7 @@ body:not(.user-is-tabbing) a:focus {
     text-decoration: none;
     color: inherit;
     border: 1px solid  var(--pink);
+    border-radius: 10px;
     font-weight: 400;
 }
 
@@ -735,6 +736,71 @@ body:not(.user-is-tabbing) a:focus {
 
 .contact__info {
     max-width: var(--container-medium-width);
+}
+
+.helpForm {
+    max-width: 1200px;
+    width: 100%;
+	background: #000000;
+    padding: 50px;
+	margin: 4rem auto;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+    border: 1px solid var(--pink);
+    border-radius: 20px;
+}
+.helpForm button[type="submit"] {
+	align-self: center;
+	margin-top: 30px;
+	padding: 12px 80px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all .15s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: all .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	background-size: 200%;
+	background-position: 99% 0;
+}
+.helpForm label {
+	animation: slide .3s cubic-bezier(0.19, 1, 0.22, 1), fadeIn .4s ease;
+	animation-fill-mode: both;
+	animation-delay: .1s;
+}
+.helpForm label:last-of-type {
+	animation-delay: .2s;
+}
+.helpForm label {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+	text-transform: uppercase;
+	gap: 4px;
+}
+.helpForm label:not(:first-of-type) {
+	margin-top: 30px;
+}
+.helpForm input,
+.helpForm textarea {
+	border: 1px solid #32353c;
+	border-radius: 2px;
+	background-color: #32353c;
+	padding: 10px 15px;
+	font-size: 14px;
+	margin-top: 5px;
+	color: white;
+}
+
+@media (min-width: 700px) {
+	.helpForm {
+		width: 70%;
+		margin: 4rem auto;
+	}
+	.helpForm button[type="submit"] {
+		align-self: flex-end;
+	}
 }
 
 /* --------------------------------------- */

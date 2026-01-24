@@ -1,21 +1,20 @@
 const handleFirstTab = (e) => {
-  if(e.key === 'Tab') {
-    document.body.classList.add('user-is-tabbing')
+  if (e.key === "Tab") {
+    document.body.classList.add("user-is-tabbing");
 
-    window.removeEventListener('keydown', handleFirstTab)
-    window.addEventListener('mousedown', handleMouseDownOnce)
+    window.removeEventListener("keydown", handleFirstTab);
+    window.addEventListener("mousedown", handleMouseDownOnce);
   }
-
-}
+};
 
 const handleMouseDownOnce = () => {
-  document.body.classList.remove('user-is-tabbing')
+  document.body.classList.remove("user-is-tabbing");
 
-  window.removeEventListener('mousedown', handleMouseDownOnce)
-  window.addEventListener('keydown', handleFirstTab)
-}
+  window.removeEventListener("mousedown", handleMouseDownOnce);
+  window.addEventListener("keydown", handleFirstTab);
+};
 
-window.addEventListener('keydown', handleFirstTab)
+window.addEventListener("keydown", handleFirstTab);
 
 const backToTopButton = document.querySelector(".retour-en-haut");
 let isBackToTopRendered = false;
@@ -38,40 +37,56 @@ window.addEventListener("scroll", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const triggers = document.querySelectorAll("[data-modal-trigger]");
 
-document.addEventListener('DOMContentLoaded', function() {
-    const triggers = document.querySelectorAll('[data-modal-trigger]');
-    
-    triggers.forEach(trigger => {
-        trigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            const modalId = this.getAttribute('data-modal-trigger');
-            document.getElementById(modalId).style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        });
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+      const modalId = this.getAttribute("data-modal-trigger");
+      document.getElementById(modalId).style.display = "block";
+      document.body.style.overflow = "hidden";
     });
+  });
 
-    document.querySelectorAll('.close-button').forEach(btn => {
-        btn.addEventListener('click', function() {
-            this.closest('.modal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        });
+  document.querySelectorAll(".close-button").forEach((btn) => {
+    btn.addEventListener("click", function () {
+      this.closest(".modal").style.display = "none";
+      document.body.style.overflow = "auto";
     });
+  });
 
-    window.addEventListener('click', function(e) {
-        if (e.target.classList.contains('modal')) {
-            e.target.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    });
+  window.addEventListener("click", function (e) {
+    if (e.target.classList.contains("modal")) {
+      e.target.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
 });
 
-const nav = document.querySelector('.nav');
+const nav = document.querySelector(".nav");
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        nav.classList.add('nav--scroll');
-    } else {
-        nav.classList.remove('nav--scroll');
-    }
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    nav.classList.add("nav--scroll");
+  } else {
+    nav.classList.remove("nav--scroll");
+  }
+});
+
+const formContact = document.querySelector(".helpForm");
+
+formContact.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const sujet = formContact.querySelector("input[name=subject]");
+  const message = formContact.querySelector("textarea[name=body]");
+  if (sujet.value.length === 0)
+    alert("attention vous avez laisser le sujet vide");
+  else if (message.value.length === 0)
+    alert("attention vous avec laisser le message vide");
+  else if (sujet.value.length != 0 && message.value.length != 0) {
+    window.location.href = `mailto:ylannwattrelos060@gmail.com?subject=${encodeURIComponent(sujet.value)}&body=${encodeURIComponent(message.value)}`;
+    sujet.value = "";
+    message.value = "";
+  }
 });

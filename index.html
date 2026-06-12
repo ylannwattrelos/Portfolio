@@ -91,9 +91,6 @@
         <h2>Mes Projets</h2>
         <div class="projet__boxes">
 
-          <div class="carousel-projet">
-            <div class="projet__boxes auto-scroll"> 
-              
               <!-- *** Mille borne *** -->
               <div class="projet__box">
                 <div class="projet__text">
@@ -162,161 +159,104 @@
                 </div>
               </div>
 
-            </div>
 
 
-            <!-- *** Boxe pour le carrousel *** -->
-            <div aria-hidden="true" class="projet__boxes auto-scroll">
+        </div>
 
-              <!-- *** Mille borne *** -->
-              <div class="projet__box">
-                <div class="projet__text">
-                  <h3>Mille Borne</h3>
-                  <ul class="projet__list">
-                    <li>IJava</li>
-                  </ul>
-
-                  <div class="projet__liens">
-                    <a class="lien__text" data-modal-trigger="modal-milleborne">
-                      Voir le projet <span>&rarr;</span>
-                    </a>
-                    <a href="https://github.com/ylannwattrelos/MilleBornePourUnChampion" title="View Source Code" target="_blank">
-                      <img src="./images/github.svg" class="projet__code" alt="GitHub">
-                    </a>
-                  </div>
-                </div>
-                <div class="projet__image-box">
-                  <img src="./images/MilleBorne.png" class="projet__image" alt="portfolio" />
-                </div>
-              </div>
-
-              <!--- *** IUT'errain *** -->
-              <div class="projet__box">
-                <div class="projet__text">
-                  <h3>IUT'errain</h3>
-                  <ul class="projet__list">
-                    <li>Java</li>
-                    <li>JavaFX</li>
-                    <li>FXML</li>
-                  </ul>
-
-                  <div class="projet__liens">
-                    <a class="lien__text" data-modal-trigger="modal-iuterrain">
-                      Voir le projet <span>&rarr;</span>
-                    </a>
-                    <a href="https://github.com/ylannwattrelos/IUTerrain" title="View Source Code" target="_blank">
-                      <img src="./images/github.svg" class="projet__code" alt="GitHub">
-                    </a>
-                  </div>
-                </div>
-                <div class="projet__image-box">
-                  <img src="./images/IUTerrain.png" class="projet__image" alt="page d'accueil du jeu" />
-                </div>
-              </div>
-
-              <!-- *** Check.exe *** -->
-              <div class="projet__box">
-                <div class="projet__text">
-                  <h3>Check.exe</h3>
-                  <ul class="projet__list">
-                    <li>Java</li>
-                  </ul>
-
-                  <div class="projet__liens">
-                    <a class="lien__text" data-modal-trigger="modal-check.exe">
-                      Voir le projet <span>&rarr;</span>
-                    </a>
-                    <a href="https://github.com/ylannwattrelos/Check.exe" title="View Source Code" target="_blank">
-                      <img src="./images/github.svg" class="projet__code" alt="GitHub">
-                    </a>
-                  </div>
-                </div>
-                <div class="projet__image-box">
-                  <img src="./images/checkexe.png" class="projet__image" alt="page d'accueil du jeu" />
-                </div>
-              </div>
-
-            </div>
-
-            </div>
-          </div>
-
-          <!-- *** box info sup projet-->
+          <!-- *** box info sup *** -->
+          <!-- *** milleborne*** -->
           <div id="modal-milleborne" class="modal">
             <div class="modal-content">
               <span class="close-button">&times;</span>
               <h3>Mille Borne pour un Champion</h3>
+              
               <p>
-                Ce projet a été <strong>réalisé en binôme</strong> dans le cadre de ma formation. L'objectif était de recréer le célèbre jeu de cartes, en y ajoutant une petite touche éducative, en appliquant des concepts de programmation structurée.
+                <strong>Le Projet :</strong> Réalisé en binôme, ce projet avait pour but de recréer le célèbre jeu de cartes "Mille Bornes" pour y jouer directement dans le terminal, tout en y intégrant une dimension ludo-pédagogique.
               </p>
 
               <div>
-                <b>Points clés du projet :</b>
+                <b>Mes progrès :</b>
+                <p>Ce projet a été ma porte d'entrée vers la programmation structurée. Développé en <strong>iJava</strong> (une version simplifié de Java), il m'a permis de faire un bond en avant sur plusieurs points :</p>
                 <ul>
-                  <li>Conception responsive pour une utilisation sur tous supports.</li>
-                  <li>Interface utilisateur fluide et intuitive.</li>
-                  <li>Gestion de la logique de jeu (attaques, bottes, limitations de vitesse).</li>
+                  <li><strong>La logique algorithmique complexe :</strong> J'ai appris à traduire des règles de jeu réelles (attaques, parades, bottes, limitations de vitesse) en conditions et boucles dans le code.</li>
+                  <li><strong>La gestion d'état :</strong> Comprendre comment stocker et mettre à jour l'état d'un joueur (en route, accidenté, protégé) au fil des tours.</li>
+                  <li><strong>Le travail en équipe :</strong> Coder en binôme m'a initié à la communication technique, au partage des tâches et à la relecture du code de quelqu'un d'autre.</li>
+                  <li><strong>L'expérience utilisateur (UX) textuelle :</strong> Même dans un terminal, j'ai cherché à rendre les menus et les actions clairs et intuitifs pour le joueur.</li>
                 </ul>
               </div>
 
               <p>
-                <b>Technologies :</b> <strong>iJava</strong> (une version simplifiée du Java orientée apprentissage).
+                <em>Ce premier projet m'a donné des bases solides en logique de programmation, essentielles pour la suite de mon parcours.</em>
               </p>
+
               <a href="https://github.com/ylannwattrelos/MilleBornePourUnChampion" target="_blank" class="modal-link">
-                Voir le code source complet sur GitHub &rarr;
+                Voir l'analyse technique et le code source sur GitHub &rarr;
               </a>
             </div>
           </div>
 
+          <!-- *** iuterrain *** -->
           <div id="modal-iuterrain" class="modal">
             <div class="modal-content">
               <span class="close-button">&times;</span>
               <h3>IUT'errain : Le Labyrinthe en Java</h3>
+              
               <p>
-                IUT'errain est un jeu de labyrinthe développé dans le cadre d'un projet universitaire. L'objectif était de mettre en pratique les connaissances acquises en programmation orientée objet (POO) et en développement d'interfaces graphiques, en utilisant le principe du MVC (Modèle, Vue, Contrôleur).
+                <strong>Le Projet :</strong> Développé en équipe de 4, IUT'errain est un jeu de labyrinthe sur PC proposant une génération de niveaux dynamiques, un mode progression, et des mécaniques comme le "brouillard de guerre" (vue restreinte).
               </p>
-              <p>
-                <b>Technologies utilisées :</b>
+
+              <div>
+                <b>Mes progrès :</b>
+                <p>Ce projet universitaire a marqué un tournant dans ma façon de concevoir une application. Il m'a permis de professionnaliser mon code et ma méthode de travail :</p>
                 <ul>
-                  <li><b>Java :</b> Langage de programmation principal.</li>
-                  <li><b>JavaFX :</b> Framework pour la création de l'interface graphique.</li>
-                  <li><b>FXML :</b> Langage de balisage pour définir la structure de l'interface utilisateur, séparant la vue du contrôleur.</li>
+                  <li><strong>Architecture MVC :</strong> J'ai appris à séparer rigoureusement la logique métier (le modèle du labyrinthe) de l'interface utilisateur (vues FXML) et des actions (contrôleurs).</li>
+                  <li><strong>Développement d'Interfaces (GUI) :</strong> Découverte de JavaFX et FXML pour créer une interface fluide, gérer les événements clavier et intégrer des effets sonores.</li>
+                  <li><strong>Qualité du code et Tests :</strong> Utilisation de Maven pour la gestion des dépendances et rédaction de tests unitaires avec JUnit 5 pour garantir la fiabilité de notre logique.</li>
+                  <li><strong>Travail en équipe :</strong> Collaborer à 4 sur le même code source nous a obligés à être rigoureux sur Git, à nous répartir les tâches intelligemment et à communiquer efficacement.</li>
                 </ul>
-              </p>
+              </div>
+
               <p>
-                Le jeu propose différentes générations de labyrinthes et une navigation utilisateur fluide.
+                <em>Ce projet m'a prouvé l'importance d'une bonne architecture logicielle pour maintenir et faire évoluer une application.</em>
               </p>
+
               <a href="https://github.com/ylannwattrelos/IUTerrain" target="_blank" class="modal-link">
-                Voir le code source complet sur GitHub &rarr;
+                Voir l'analyse technique et le code source sur GitHub &rarr;
               </a>
             </div>
           </div>
 
+          <!-- *** check.exe *** -->
           <div id="modal-check.exe" class="modal">
             <div class="modal-content">
               <span class="close-button">&times;</span>
               <h3>Check.exe : Échecs en Terminal</h3>
+              
               <p>
-                <b>Check.exe</b> est un jeu d'échecs entièrement développé en Java, conçu pour s'exécuter dans un terminal. Ce projet nous a surtout permis de découvrir et d'appliquer la méthodologie Agile.
+                <strong>Le Projet :</strong> Développé en équipe de 4 sur une durée intensive de moins d'une semaine, <strong>Check.exe</strong> est un jeu d'échecs complet jouable en ligne de commande (CLI) avec une interface rétro en caractères ASCII.
               </p>
-              <p>
-                <b>Technologies utilisées :</b>
+
+              <div>
+                <b>Analyse de mes progrès :</b>
+                <p>Ce projet a été un véritable défi de rapidité et d'organisation, transformant ma manière de travailler sous pression :</p>
                 <ul>
-                  <li><b>Java :</b> Utilisation intensive de la POO pour modéliser les pièces et leurs déplacements.</li>
-                  <li><b>Bash/Scripts :</b> Automatisation de la compilation et de l'exécution via des scripts shell.</li>
-                  <li><b>Logique de jeu :</b> Implémentation des règles spéciales (Roque, Prise en passant, Promotion).</li>
+                  <li><strong>Méthodologie Agile :</strong> Contraints par le délai d'une semaine, nous avons appliqué les principes Agiles pour découper le projet en tâches prioritaires, réaliser des points quotidiens et adapter notre planning en temps réel.</li>
+                  <li><strong>Modélisation POO Avancée :</strong> Les échecs imposent une logique stricte. J'ai approfondi mes compétences en programmation orientée objet en gérant le polymorphisme des pièces (chaque pièce a ses propres règles de déplacement) et les coups spéciaux (Roque, Prise en passant, Promotion).</li>
+                  <li><strong>Automatisation et Scripts :</strong> Utilisation de scripts Bash pour automatiser le nettoyage, la compilation et l'exécution du programme, simplifiant le processus de test pour l'équipe.</li>
+                  <li><strong>Efficacité collective :</strong> Face à un timing aussi serré, j'ai appris à faire confiance aux choix techniques de mes équipiers et à intégrer mon code rapidement sans bloquer le reste du groupe.</li>
                 </ul>
-              </p>
+              </div>
+
               <p>
-                Le jeu propose une interface en caractères ASCII pour une expérience rétro et légère.
+                <em>Une expérience intense qui m'a prouvé l'efficacité des méthodes Agiles pour livrer un logiciel fonctionnel et complexe en un temps record.</em>
               </p>
+
               <a href="https://github.com/ylannwattrelos/Check.exe" target="_blank" class="modal-link">
-                Voir le code source complet sur GitHub &rarr;
+                Voir l'analyse technique et le code source sur GitHub &rarr;
               </a>
             </div>
           </div>
 
-        </div>
       </div>
     </section>
 

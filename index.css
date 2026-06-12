@@ -498,29 +498,13 @@ body:not(.user-is-tabbing) a:focus {
     overflow: hidden;
 }
 
-.carousel-projet {
+.projet__boxes {
     display: flex;
     overflow: hidden;
     width: 100%;
     gap: 2rem; 
     &:hover .auto-scroll {
         animation-play-state: paused;
-    }
-}
-
-.projet__boxes.auto-scroll {
-    display: flex;
-    gap: 2rem;
-    will-change: transform;
-    animation: scrolling 10s linear infinite;
-}
-
-@keyframes scrolling {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
     }
 }
 
